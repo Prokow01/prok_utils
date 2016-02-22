@@ -1,2 +1,8 @@
 # prok_utils
-my personal scripts for my configurations and whatnot
+
+a collection of my personal scripts. 
+
+
+Containing but not limited to
+  * Configurations
+  * Automations
