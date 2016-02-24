@@ -36,6 +36,16 @@ sudo apt-get -y install exuberant-ctags;
 
 sudo apt-get autoclean;
 
+
+# Get VIm setup
+sudo apt-get -y install vim;
+sudo cp dot_files/.vimrc ~/.;
+sudo mkdir -p ~/.vim/colors; mkdir -p ~/.vim/plugins;
+
+#stick in install script to clone the plugin directories and colorschemes that I want
+
+
+
 # install system utilities
 # systemback
 # gparted
