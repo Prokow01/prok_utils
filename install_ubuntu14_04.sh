@@ -42,7 +42,7 @@ sudo apt-get -y install vim;
 sudo cp dot_files/.vimrc ~/.;
 sudo mkdir -p ~/.vim/colors; mkdir -p ~/.vim/plugins;
 
-#stick in install script to clone the plugin directories and colorschemes that I want
+# stick in install script to clone the plugin directories and colorschemes that I want
 
 
 

@@ -1,0 +1,18 @@
+
+# Sourcing the aliases file, since this isn't automatic in OSX
+if [ -f ~/.bash_aliases ]; then
+. ~/.bash_aliases
+fi
+
+
+# Set CLICOLOR if you want Ansi Colors in iTerm2 
+export CLICOLOR=1
+
+# Set colors to match iTerm2 Terminal Colors
+export TERM=xterm-256color
+
+
+# Script for checking if commands exist more efficent than using which
+command_exists () {
+    type "$1" &> /dev/null ;
+}
