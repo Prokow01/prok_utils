@@ -44,13 +44,10 @@ sudo apt-get autoclean;
 sudo apt-get -y install vim;
 sudo cp dot_files/.vimrc ~/.;
 sudo mkdir -p ~/.vim/colors; mkdir -p ~/.vim/plugins;
-<<<<<<< HEAD
 
 # stick in install script to clone the plugin directories and colorschemes that I want
-=======
 # call out to vim plugin and color install scripts from here.. in fact they shoudl make the respective directories...
 #stick in install script to clone the plugin directories and colorschemes that I want
->>>>>>> 28b1a60238dffdcb5451a657a56d7f7d77d884ca
 
 
 
