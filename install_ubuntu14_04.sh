@@ -33,6 +33,9 @@ sudo apt-get -y install plank;
 # install ctags for vim
 sudo apt-get -y install exuberant-ctags;
 
+# install colordiff
+sudo apt-get -y install colordiff
+
 
 sudo apt-get autoclean;
 
@@ -41,7 +44,7 @@ sudo apt-get autoclean;
 sudo apt-get -y install vim;
 sudo cp dot_files/.vimrc ~/.;
 sudo mkdir -p ~/.vim/colors; mkdir -p ~/.vim/plugins;
-
+# call out to vim plugin and color install scripts from here.. in fact they shoudl make the respective directories...
 #stick in install script to clone the plugin directories and colorschemes that I want
 
 
