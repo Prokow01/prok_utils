@@ -2,7 +2,7 @@
 
 echo "Checking if homebrew is installed...";
 
-brew=`which brew`;
+brew=`which brew`; # move this to it's own script?? no it might be better to have it here then just a software list to move through here
 
 if command_exists "$brew"; then
     echo "Installing homebrew...";
