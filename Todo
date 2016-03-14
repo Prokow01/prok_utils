@@ -1,23 +1,9 @@
-[git aware]
-https://github.com/jimeh/git-aware-prompt.git
+List:
+    - Create an install directory for plugin install scripts and whatnot
+    - create script for homebrew:
+            [] check installation / install
+            [] add Cask
 
-mkdir ~/.bash
-cd ~/.bash
-git clone git://github.com/jimeh/git-aware-prompt.git
-
-
-export GITAWAREPROMPT=~/.bash/git-aware-prompt
-source "${GITAWAREPROMPT}/main.sh"
-
-[mac]
-export PS1="\u@\h \W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
-export SUDO_PS1="\[$bakred\]\u@\h\[$txtrst\] \w\$ "
-
-[ubuntu]
-export PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
-
-[e git aware]
-
-## update with a git pull ## make a directory for holding extension scripts (installs and adding updates and whatnots to the aliases files)
-
-
+    - Create Cask list and automated install for that
+    - Create individual homebrew install scripts for certain tools : pip, python etc.
+    - Create Master / Guest install script for either full profile install or just tools to use on others computers    
