@@ -1,10 +1,35 @@
 syntax enable 
 set nowrap
+
 set incsearch
+set hlsearch
 
 set nu
 
 set tabstop=4
 set expandtab
 
+" Remapping movement keys and insert to make life a little easier
+map i <Up>
+map j <Left>
+map k <Down>
+noremap h i
+
+" mapping leader key to space-bar
+let mapleader=" "
+let g:mapleader=" "
+
+" save file to space+w
+nmap <leader>w :w<cr>
+nmap <leader>q :q<cr>
+
+" set search to center the screen
+nnoremap n nzz
+nnoremap N Nzz
+
+" make sure that colorschemes are set up in the right spot
 colorscheme monokai
+
+" Force the .ns extension to read as .tcl
+au BufRead,BufNewFile *.ns set filetype=tcl
+
