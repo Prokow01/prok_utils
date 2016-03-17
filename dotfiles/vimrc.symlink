@@ -6,8 +6,15 @@ set hlsearch
 
 set nu
 
+" tab stuff
 set tabstop=4
+set softtabstop=4   " edit as if the tabs are 4 characters wide
+set shiftwidth=4    " number of spaces to use for indent and unindent
 set expandtab
+
+" indentation
+set autoindent " automatically set indent of new line
+set smartindent
 
 " Remapping movement keys and insert to make life a little easier
 map i <Up>
@@ -32,4 +39,8 @@ colorscheme monokai
 
 " Force the .ns extension to read as .tcl
 au BufRead,BufNewFile *.ns set filetype=tcl
+
+" set the fold to indent if it's a python file
+au BufRead,BufNewFile *.py set foldmethod=indent
+
 
