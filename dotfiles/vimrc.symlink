@@ -4,6 +4,10 @@ set nowrap
 set incsearch
 set hlsearch
 
+" case
+set ignorecase
+set smartcase
+
 set nu
 
 " tab stuff
@@ -34,9 +38,15 @@ nmap <leader>q :q<cr>
 nnoremap n nzz
 nnoremap N Nzz
 
-" make sure that colorschemes are set up in the right spot
-colorscheme monokai
-
+if has("unix")
+    let s:uname = system("uname")
+    if s:uname == "Darwin\n"
+        " Default Colorscheme
+    else
+        " make sure that colorschemes are set up in the right spot
+        colorscheme monokai
+    endif
+endif
 " Force the .ns extension to read as .tcl
 au BufRead,BufNewFile *.ns set filetype=tcl
 
