@@ -26,6 +26,9 @@ map j <Left>
 map k <Down>
 noremap h i
 
+" Remap jj to be esx
+imap jj <Esc>
+
 " mapping leader key to space-bar
 let mapleader=" "
 let g:mapleader=" "

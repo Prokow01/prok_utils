@@ -1,6 +1,7 @@
 #!/bin/bash
 
-DOTFILES=$HOME/dotfiles
+PROK_UTILS=$HOME/Projects/prok_utils
+DOTFILES=$PROK_UTILS/dotfiles
 
 echo -e "\nCreating symlinks"
 echo "=============================="
