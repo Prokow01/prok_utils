@@ -26,8 +26,8 @@ map j <Left>
 map k <Down>
 noremap h i
 
-" Remap jj to be esx
-imap jj <Esc>
+" adding in a quicker <ESC> key
+imap jj <ESC>
 
 " mapping leader key to space-bar
 let mapleader=" "
@@ -56,4 +56,4 @@ au BufRead,BufNewFile *.ns set filetype=tcl
 " set the fold to indent if it's a python file
 au BufRead,BufNewFile *.py set foldmethod=indent
 
-
+set nofoldenable    " disable folding for now
