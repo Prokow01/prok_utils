@@ -10,3 +10,5 @@ List:
 
 RESOLVE:
     - Git_aware adds to the bash_profile, which edits the dotfiles/bash_profile... find a way to toggle this so that the intial bash_profile doesn't come with extra junk..
+    [SOLUTION]
+        - Create a file to source in the bash_profile.dotfile which has the git configurations... 
