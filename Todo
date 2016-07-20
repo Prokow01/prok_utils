@@ -7,3 +7,8 @@ List:
     - Create Cask list and automated install for that
     - Create individual homebrew install scripts for certain tools : pip, python etc.
     - Create Master / Guest install script for either full profile install or just tools to use on others computers    
+
+RESOLVE:
+    - Git_aware adds to the bash_profile, which edits the dotfiles/bash_profile... find a way to toggle this so that the intial bash_profile doesn't come with extra junk..
+    [SOLUTION]
+        - Create a file to source in the bash_profile.dotfile which has the git configurations... 

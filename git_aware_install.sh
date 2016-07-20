@@ -43,4 +43,4 @@ fi
 
 echo '## [End Git-Aware] - to update switch to .bash/git-aware-prompt and do a git pull' >> $BASHCONFIG
 cd $HOME # reset directory
-source $BACHCONFIG
+source $BASHCONFIG
