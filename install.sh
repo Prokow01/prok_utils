@@ -5,12 +5,12 @@ echo "==> Installing dotfiles"
 echo "Initializing submodule(s)..."
 git submodule update --init --recursive
 
-echo "Linking all dotfiles..."
-source install/link.sh
+#echo "Linking all dotfiles..."
+#source install/link.sh
 
 if [ "$(uname)" == "Darwin" ]; then
     echo "Installing on OSX"
-
+        
     echo "Checking if homebrew is installed..."
     brew=`which brew`
     if [ -z "$brew" ]
@@ -25,11 +25,11 @@ if [ "$(uname)" == "Darwin" ]; then
     source install/brew.sh
 
     echo "Updating OSX settings..."
-    source installosx.sh
+    source supportedOS/installosx.sh
 elif [ "$(uname)" == "Linux" ]; then
     # assumes ubuntu
     # sudo apt-get -y install zsh
-    source install/install_ubuntu14_04.sh
+    source supportedOS/install_ubuntu14_04.sh
 fi
 
 # Install oh-my-zsh

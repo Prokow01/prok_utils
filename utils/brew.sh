@@ -15,4 +15,6 @@ brew cask install spotify;
 brew cask install spectacle;
 # add config script
 
+brew cask install iterm2;
+
 exit 0
