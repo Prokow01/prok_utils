@@ -47,7 +47,7 @@ if has("unix")
         " Default Colorscheme
     else
         " make sure that colorschemes are set up in the right spot
-        colorscheme monokai
+        colorscheme Monokai
     endif
 endif
 " Force the .ns extension to read as .tcl
