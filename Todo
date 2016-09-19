@@ -1,12 +1,13 @@
 List:
     - Create an install directory for plugin install scripts and whatnot
     - create script for homebrew:
-            [] check installation / install
-            [] add Cask
+            [ ] check installation / install
+            [x] add Cask
 
-    - Create Cask list and automated install for that
-    - Create individual homebrew install scripts for certain tools : pip, python etc.
     - Create Master / Guest install script for either full profile install or just tools to use on others computers    
+    - Add proxy stuff to append certain proxy information to all brew:
+        precede any command with :
+            http_proxy=http...proxy:port
 
 RESOLVE:
     - Git_aware adds to the bash_profile, which edits the dotfiles/bash_profile... find a way to toggle this so that the intial bash_profile doesn't come with extra junk..
