@@ -45,6 +45,7 @@ if has("unix")
     let s:uname = system("uname")
     if s:uname == "Darwin\n"
         " Default Colorscheme
+        colorscheme Monokai
     else
         " make sure that colorschemes are set up in the right spot
         colorscheme Monokai
