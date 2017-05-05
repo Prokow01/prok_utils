@@ -1,6 +1,4 @@
-Add all:
-    -Homebrew
-    -Cask
-    -Etc
-    -bash_profile??
-Scripts here!!
+[] create a script to brew install all files in the cask_list.
+[] add a generic homebrew install list as well.
+[] add a script for putting the sublime config file in the right place, and for downloading / installing all your favorite sublime plugins, and extensions.
+[] add vagrant files for virtualbox testing of these install scripts
