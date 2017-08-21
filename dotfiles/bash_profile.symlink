@@ -9,3 +9,12 @@ export CLICOLOR=1
 # Set colors tp match iTerm2 Terminal Colors
 export TERM=xterm-256color
 
+
+##
+# Your previous /Users/prokowski/.bash_profile file was backed up as /Users/prokowski/.bash_profile.macports-saved_2017-08-16_at_12:01:00
+##
+
+# MacPorts Installer addition on 2017-08-16_at_12:01:00: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
