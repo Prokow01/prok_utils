@@ -18,4 +18,8 @@ source .bashrc;
 
 
 
+# Other proxies
+# - git-svn (~/.subversion/servers)
+# - maven (~/.m2/settings.xml)
+# - node (npm config set http-proxy)
 
