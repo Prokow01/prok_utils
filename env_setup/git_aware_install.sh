@@ -6,7 +6,7 @@ case $sys in
     'Darwin')
         BASHCONFIG="$HOME/.bash_profile"
         ;;
-    'Ubuntu')
+    'Linux')
         BASHCONFIG="$HOME/.bashrc"
         ;;
     *)
@@ -36,7 +36,7 @@ if [ $sys == 'Darwin' ]; then
 fi
 
 # [Ubuntu] -- Throw these into .bashrc for Ubuntu
-if [ $sys == 'Ubuntu' ]; then
+if [ $sys == 'Linux' ]; then
     echo '# UBUNTU - specfic configuration' >> $BASHCONFIG
     echo 'export PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ ;"' >> $BASHCONFIG
 fi
