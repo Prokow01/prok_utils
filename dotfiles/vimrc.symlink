@@ -8,7 +8,7 @@ set hlsearch
 set ignorecase
 set smartcase
 
-set nu
+set relativenumber
 
 " tab stuff
 set tabstop=4
