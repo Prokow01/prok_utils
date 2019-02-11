@@ -5,6 +5,10 @@ echo "==> Installing dotfiles"
 echo "Initializing submodule(s)..."
 git submodule update --init --recursive
 
+# setting up who I am 
+git config --global user.name Prokow01;
+git config --global user.email peterrokowski@gmail.com;
+
 #echo "Linking all dotfiles..."
 #source install/link.sh
 
