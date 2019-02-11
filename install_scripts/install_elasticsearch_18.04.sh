@@ -28,7 +28,7 @@ fi
 
 # if the install failed somewhere, make sure it's the last thing seen
 if [ $INSTALL_FAILED = false ]; then 
-	echo 'PROK - Continue w/ installation';
+	echo 'PROK - INSTALLATION is complete, elasticsearch is up and running';
 else
 	echo 'PROK - INSTALL has failed somewhere, check the output';
 fi
