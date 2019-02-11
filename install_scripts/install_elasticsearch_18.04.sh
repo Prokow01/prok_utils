@@ -3,13 +3,13 @@
 INSTALL_FAILED=false;
 
 # make sure we're in the clear here and all up to date.
-sudo apt-update;
-sudo apt-get upgrade -y;
+sudo -E apt-update;
+sudo -E apt-get upgrade -y;
 
 # install Java 8, by adding the repo.
-sudo add-apt-repository ppa:webupd8team/java;
-sudo apt-get update;
-sudo apt-get install oracle-java8-installer -y;
+sudo -E add-apt-repository ppa:webupd8team/java;
+sudo -E apt-get update;
+sudo -E apt-get install oracle-java8-installer -y;
 
 
 # install ES
