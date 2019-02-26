@@ -1,9 +1,4 @@
-
 # Sourcing the aliases file, since this isn't automatic in OSX
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
 #if [ -f ~/.bash_profile ]; then
 #    . ~/bash_profile
 #fi
