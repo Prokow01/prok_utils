@@ -52,8 +52,8 @@ which npm;
 if [ $? -eq 0 ]; then
 	echo 'Found npm --- Changin Proxy';
 	# Unset old proxy
-	npm config unset proxy;
-	npm config unset https-proxy;
+	npm config delete proxy;
+	npm config delete https-proxy;
 
 	# Set new one
 	npm config set proxy $HTTP;
