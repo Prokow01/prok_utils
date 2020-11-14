@@ -16,9 +16,9 @@ command_exists () {
     type "$1" &> /dev/null ;
 }
 
-export http_proxy="";
-export https_proxy="";
+#export http_proxy="";
+#export https_proxy="";
 
 IAM="$(whoami)";
 
-export PATH="/Users/${IAM}/anaconda3/bin:$PATH";
+#export PATH="/Users/${IAM}/anaconda3/bin:$PATH";
