@@ -28,7 +28,8 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io;
 
 echo 'done... please verify that docker is installed correctly with "sudo docker run hello-world"';
 
-
+echo 'installing docker-compose';
+sudo apt-get install docker-compose;
 
 echo "adding $USER to the docker group";
 sudo usermod -aG docker ${USER};
