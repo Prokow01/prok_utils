@@ -17,14 +17,20 @@ set shiftwidth=4    " number of spaces to use for indent and unindent
 set expandtab
 
 " indentation
-set autoindent " automatically set indent of new line
-set smartindent
+" set autoindent " automatically set indent of new line
+" set smartindent
 
 " Remapping movement keys and insert to make life a little easier
-map i <Up>
-map j <Left>
-map k <Down>
-noremap h i
+"map i <Up>
+"map j <Left>
+"map k <Down>
+"noremap h i
+
+ " check off a todo item and time stamp it
+ map gg ^rx: <Esc>:r! date +" [\%H:\%M]"<ENTER>kJA<Esc>$
+
+ " create a new todo item
+ map gt o  _
 
 " adding in a quicker <ESC> key
 imap jj <ESC>
