@@ -17,6 +17,15 @@ sudo -E add-apt-repository -y ppa:ricotz/docky;
 # update
 sudo apt-get update;
 
+# install python3
+sudo apt-get install python3;
+sudo apt-get install python3-pip;
+
+# set the default python to 3 by using the update-alternatives and assigning highest priority
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10;
+
+
+
 # install packages
 sudo apt-get -y install synaptic gdebi;
 sudo apt-get -y install vim git htop tmux;
