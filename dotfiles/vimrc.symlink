@@ -26,8 +26,13 @@ set expandtab
 "map k <Down>
 "noremap h i
 
- " check off a todo item and time stamp it
- map gg ^rx: <Esc>:r! date +" [\%H:\%M]"<ENTER>kJA<Esc>$
+if has("unix")
+	" check off a todo item and time stamp it
+	map gg ^rx: <Esc>:r! date +" [\%H:\%M]"<ENTER>kJA<Esc>$
+else
+	" windows does not support date so we use put
+	map gg ^rx: <Esc>:put=strftime('[%c]') <ENTER>kJA<Esc>$
+endif
 
  " create a new todo item
  map gt o  _
@@ -56,7 +61,13 @@ if has("unix")
         " make sure that colorschemes are set up in the right spot
         colorscheme Monokai
     endif
+
+else
+    colorscheme Monokai
 endif
+
+
+
 " Force the .ns extension to read as .tcl
 au BufRead,BufNewFile *.ns set filetype=tcl
 
