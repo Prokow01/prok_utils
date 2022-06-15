@@ -34,8 +34,11 @@ else
 	map gg ^rx: <Esc>:put=strftime('[%c]') <ENTER>kJA<Esc>$
 endif
 
- " create a new todo item
- map gt o  _
+" create a new todo item
+map gt o  _
+" Create a banner item
+map gb o ------ <ESC>o ------<Esc><Up> o <Space> 
+map gh o : <ESC>^i
 
 " adding in a quicker <ESC> key
 imap jj <ESC>
