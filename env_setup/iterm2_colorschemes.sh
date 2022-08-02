@@ -2,7 +2,7 @@
 
 echo "downloading iTerm 2 Colorschemes";
 
-CONFIG_DIR="$HOME/.config";
+CONFIG_DIR="../repo";
 
 if [ ! -d "$CONFIG_DIR" ]; then
     mkdir $CONFIG_DIR;
