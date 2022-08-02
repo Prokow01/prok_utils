@@ -20,8 +20,8 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 
 ## [Git-Aware Installation]
-export GITAWAREPROMPT=~/.bash/git-aware-prompt;
-source "${GITAWAREPROMPT}/main.sh";
+#export GITAWAREPROMPT=~/.bash/git-aware-prompt;
+#source "${GITAWAREPROMPT}/main.sh";
 
 # MAC - specific configuration
 #export PS1="\u@\h \W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ ";
