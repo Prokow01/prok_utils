@@ -1,0 +1,4 @@
+git
+spectacle
+spotify
+wget
