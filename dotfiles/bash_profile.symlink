@@ -37,6 +37,10 @@ command_exists () {
     type "$1" &> /dev/null ;
 }
 
+# https://stackoverflow.com/questions/229551/how-to-check-if-a-string-contains-a-substring-in-bash
+substring() {
+    return [ -z "$1" ] || { [ -z "${2##*$1*}" ] && [ -n "$2" ]; };
+}
 #export http_proxy="";
 #export https_proxy="";
 
