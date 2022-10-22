@@ -1,8 +1,11 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/bin:/usr/local/bin:$PATH";
+export PATH="/usr/local/sbin:$PATH";
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/$(whoami)/.oh-my-zsh
+#export ZSH_PATH="$HOME/.oh-my-zsh";
+export BASH_PROFILE="$HOME/.bash_profile";
+export ZSH="$HOME/.oh-my-zsh";
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -63,8 +66,13 @@ plugins=(
   mysql
 )
 
-source $ZSH/oh-my-zsh.sh
-source ~/.bash_profile
+if [ -d $ZSH ]; then
+    source $ZSH/oh-my-zsh.sh;
+fi
+
+if [ -f $BASH_PROFILE ]; then
+    source ~/.bash_profile
+fi
 #source ~/.bashrc
 # User configuration
 
@@ -95,4 +103,4 @@ source ~/.bash_profile
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="/usr/local/sbin:$PATH"
+#export PATH="/usr/local/sbin:$PATH"
