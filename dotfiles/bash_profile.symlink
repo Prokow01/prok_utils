@@ -1,8 +1,8 @@
 # for OSX sourcing a bashrc file
-if [ -f ~/.bashrc ]; then
-    source ~/.bashrc;
-fi
-
+#if [ -f ~/.bashrc ]; then
+#    source ~/.bashrc;
+#fi
+echo "loading";
 # Set CLICOLOR if you want Ansi Colors in iTerm2
 export CLICOLOR=1
 
