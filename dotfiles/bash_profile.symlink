@@ -1,23 +1,45 @@
+## BASH_PROFILE
+#   - the settings profile for MAC OS-X Terminals
+#   - Every command, function and variable must be DASH compliant, because BASH is non-standard
+
+# Author: Peter Rokowski (peterrokowski@gmail.com/prokow01@villanova.edu)
+
 # for OSX sourcing a bashrc file
-#if [ -f ~/.bashrc ]; then
-#    source ~/.bashrc;
-#fi
-echo "loading";
-# Set CLICOLOR if you want Ansi Colors in iTerm2
-export CLICOLOR=1
+echo "loading bash_profile";
 
-# Set colors tp match iTerm2 Terminal Colors
-export TERM=xterm-256color
+## iTerm2 color settings
+# Ansi Colors
+export CLICOLOR=1;
+
+# Colors match iTerm2 Terminal Colors
+export TERM=xterm-256color;
 
 
-##
-# Your previous /Users/prokowski/.bash_profile file was backed up as /Users/prokowski/.bash_profile.macports-saved_2017-08-16_at_12:01:00
-##
+export BREW_INSTALLED=$(command_exists brew);
+if [ -z "$BREW_INSTALLED" ]; then
+    echo "brew is not installed on this machine";
+    
+else
+    echo "installed -- brew";
+fi
 
-# MacPorts Installer addition on 2017-08-16_at_12:01:00: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+
+
+
+command_exists() {
+    command=$1;
+    if [ -z "$command" ]; then 
+        return;
+    fi
+    
+    exists=$(which $command);
+    if [ "$exists"="$command not found" ]; then
+        return;
+    fi
+
+    return "found";
+}
 # Finished adapting your PATH environment variable for use with MacPorts.
-
 
 ## [Git-Aware Installation]
 #export GITAWAREPROMPT=~/.bash/git-aware-prompt;

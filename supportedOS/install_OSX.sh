@@ -12,6 +12,6 @@ else
 fi
 
 echo "Brewing all the things...";
-source install/brew.sh;
+#source install/brew.sh;
 
 
