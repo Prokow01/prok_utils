@@ -19,9 +19,9 @@ export TERM=xterm-256color;
 
 
 ## HOMEBREW Vars
-export BREW_PATH="/opt/homebrew";
+export BREW_PATH="/opt/homebrew/bin";
 if [ -d $BREW_PATH ]; then
-    export PATH="$PATH:$BREW_PATH/bin";
+    export PATH="$BREW_PATH:$PATH";
     echo "installed -- brew"
 else
     BREW_INSTALLED=`command_exists brew`;
