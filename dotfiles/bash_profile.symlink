@@ -1,23 +1,64 @@
+## BASH_PROFILE
+#   - the settings profile for MAC OS-X Terminals
+#   - Every command, function and variable must be DASH compliant, because BASH is non-standard
+
+# Author: Peter Rokowski (peterrokowski@gmail.com/prokow01@villanova.edu)
+
 # for OSX sourcing a bashrc file
-if [ -f ~/.bashrc ]; then
-    source ~/.bashrc;
+echo "loading bash_profile";
+
+export IAM="$(whoami)";
+
+## iTerm2 color settings
+# Ansi Colors
+export CLICOLOR=1;
+
+# Colors match iTerm2 Terminal Colors
+export TERM=xterm-256color;
+
+
+
+## HOMEBREW Vars
+export BREW_PATH="/opt/homebrew/bin";
+if [ -d $BREW_PATH ]; then
+    export PATH="$BREW_PATH:$PATH";
+    echo "installed -- brew"
+else
+    BREW_INSTALLED=`command_exists brew`;
+    if [ -z "$BREW_INSTALLED" ]; then
+        echo "present but not working -- brew";
+    else        
+        echo "not instlled -- brew";
+    fi
 fi
 
-# Set CLICOLOR if you want Ansi Colors in iTerm2
-export CLICOLOR=1
 
-# Set colors tp match iTerm2 Terminal Colors
-export TERM=xterm-256color
+command_exists () {
+    type "$1" &> /dev/null ;
+}
+
+# https://stackoverflow.com/questions/229551/how-to-check-if-a-string-contains-a-substring-in-bash
+substring() {
+    return [ -z "$1" ] || { [ -z "${2##*$1*}" ] && [ -n "$2" ]; };
+}
+#export http_proxy="";
+#export https_proxy="";
 
 
-##
-# Your previous /Users/prokowski/.bash_profile file was backed up as /Users/prokowski/.bash_profile.macports-saved_2017-08-16_at_12:01:00
-##
+#command_exists() {
+#    command=$1;
+#    if [ -z "$command" ]; then 
+#        return;
+#    fi
+    
+#    exists=$(which $command);
+#    if [ "$exists"="$command not found" ]; then
+#        return;
+#    fi
 
-# MacPorts Installer addition on 2017-08-16_at_12:01:00: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+#    return "found";
+#}
 # Finished adapting your PATH environment variable for use with MacPorts.
-
 
 ## [Git-Aware Installation]
 #export GITAWAREPROMPT=~/.bash/git-aware-prompt;
