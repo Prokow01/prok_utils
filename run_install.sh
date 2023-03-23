@@ -32,7 +32,7 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(uname)" == "Linux" ]; then
     # assumes ubuntu
     echo "--Linux Detected -- Assuming Ubuntu";
-    source supportedOS/install_ubuntu_tools.sh;
+    dash supportedOS/install_ubuntu_tools.sh;
 fi
 echo "<== Done"
 

@@ -27,3 +27,5 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 #export PS1="\u@\h \W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ ";
 #export SUDO_PS1="\[$bakred\]\u\@\h\[$txtrst\] \w\$ ";
 ## [End Git-Aware] - to update switch to .bash/git-aware-prompt and do a git pull
+
+alias golo='cd ${HOME}/dev';
