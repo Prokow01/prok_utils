@@ -33,6 +33,15 @@ else
 fi
 
 
+## ALIASES
+alias golo="cd ${HOME}/dev";
+
+alias ll='ls -l';
+
+alias la='ls -a';
+
+
+## FUNCTIONS
 command_exists () {
     type "$1" &> /dev/null ;
 }
@@ -69,4 +78,5 @@ substring() {
 #export SUDO_PS1="\[$bakred\]\u\@\h\[$txtrst\] \w\$ ";
 ## [End Git-Aware] - to update switch to .bash/git-aware-prompt and do a git pull
 
-alias golo='cd ${HOME}/dev';
+
+

@@ -11,3 +11,6 @@ export TERM=xterm-256color
 # Script for checking if commands exist more efficent than using which
 
 #export PATH="/Users/${IAM}/anaconda3/bin:$PATH";
+export one_drive=$HOME/OneDrive\ -\ Villanova\ University
+
+export MY_BOX="parallels@10.211.55.5";
